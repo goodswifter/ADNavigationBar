@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12093ECD23B9DB710073E0A3 /* UINavigationController+ADExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12093ECC23B9DB710073E0A3 /* UINavigationController+ADExtension.m */; };
+		12093ED023B9DB840073E0A3 /* UINavigationBar+ADDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 12093ECF23B9DB840073E0A3 /* UINavigationBar+ADDefault.m */; };
+		12093ED323B9DB940073E0A3 /* UINavigationBar+ADExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12093ED223B9DB940073E0A3 /* UINavigationBar+ADExtension.m */; };
+		12093ED623B9DBAE0073E0A3 /* UIViewController+ADExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12093ED523B9DBAE0073E0A3 /* UIViewController+ADExtension.m */; };
+		12093ED923B9DE200073E0A3 /* ADCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12093ED823B9DE200073E0A3 /* ADCustomNavigationBar.m */; };
+		12093EDC23B9E2C30073E0A3 /* UIViewController+ADRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 12093EDB23B9E2C30073E0A3 /* UIViewController+ADRoute.m */; };
 		43115DE5687FBECFCD1917BF /* Pods_ADNavigationBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F6969EF45C64CB58F60F9E /* Pods_ADNavigationBar_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -35,9 +41,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		25AE8C998713A836BC0B7B1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		12093ECA23B9D6780073E0A3 /* ADNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavigationBar.h; sourceTree = "<group>"; };
+		12093ECB23B9DB710073E0A3 /* UINavigationController+ADExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ADExtension.h"; sourceTree = "<group>"; };
+		12093ECC23B9DB710073E0A3 /* UINavigationController+ADExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ADExtension.m"; sourceTree = "<group>"; };
+		12093ECE23B9DB840073E0A3 /* UINavigationBar+ADDefault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ADDefault.h"; sourceTree = "<group>"; };
+		12093ECF23B9DB840073E0A3 /* UINavigationBar+ADDefault.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+ADDefault.m"; sourceTree = "<group>"; };
+		12093ED123B9DB940073E0A3 /* UINavigationBar+ADExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ADExtension.h"; sourceTree = "<group>"; };
+		12093ED223B9DB940073E0A3 /* UINavigationBar+ADExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+ADExtension.m"; sourceTree = "<group>"; };
+		12093ED423B9DBAE0073E0A3 /* UIViewController+ADExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ADExtension.h"; sourceTree = "<group>"; };
+		12093ED523B9DBAE0073E0A3 /* UIViewController+ADExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ADExtension.m"; sourceTree = "<group>"; };
+		12093ED723B9DE200073E0A3 /* ADCustomNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADCustomNavigationBar.h; sourceTree = "<group>"; };
+		12093ED823B9DE200073E0A3 /* ADCustomNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADCustomNavigationBar.m; sourceTree = "<group>"; };
+		12093EDA23B9E2C30073E0A3 /* UIViewController+ADRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ADRoute.h"; sourceTree = "<group>"; };
+		12093EDB23B9E2C30073E0A3 /* UIViewController+ADRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ADRoute.m"; sourceTree = "<group>"; };
+		25AE8C998713A836BC0B7B1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2A7401B0744A2BD513A96FF6 /* Pods-ADNavigationBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNavigationBar_Example.release.xcconfig"; path = "Target Support Files/Pods-ADNavigationBar_Example/Pods-ADNavigationBar_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2C1C29660ED2B78B019CA381 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2C1C29660ED2B78B019CA381 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		50F6969EF45C64CB58F60F9E /* Pods_ADNavigationBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADNavigationBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9D2621A436E81FEDEA9FB4 /* Pods-ADNavigationBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNavigationBar_Example.debug.xcconfig"; path = "Target Support Files/Pods-ADNavigationBar_Example/Pods-ADNavigationBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ADNavigationBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADNavigationBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +78,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		853C7505808B297D18E4906A /* Pods-ADNavigationBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNavigationBar_Tests.release.xcconfig"; path = "Target Support Files/Pods-ADNavigationBar_Tests/Pods-ADNavigationBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC97F88D373509F1E2AE0783 /* ADNavigationBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ADNavigationBar.podspec; path = ../ADNavigationBar.podspec; sourceTree = "<group>"; };
+		BC97F88D373509F1E2AE0783 /* ADNavigationBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ADNavigationBar.podspec; path = ../ADNavigationBar.podspec; sourceTree = "<group>"; };
 		BFA7D3D5A87094633448594C /* Pods-ADNavigationBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNavigationBar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ADNavigationBar_Tests/Pods-ADNavigationBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD3AC6524DAF3C535B002BF9 /* Pods_ADNavigationBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADNavigationBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +109,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12093EB523B9CF8F0073E0A3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12093ECA23B9D6780073E0A3 /* ADNavigationBar.h */,
+				12093ECE23B9DB840073E0A3 /* UINavigationBar+ADDefault.h */,
+				12093ECF23B9DB840073E0A3 /* UINavigationBar+ADDefault.m */,
+				12093ED123B9DB940073E0A3 /* UINavigationBar+ADExtension.h */,
+				12093ED223B9DB940073E0A3 /* UINavigationBar+ADExtension.m */,
+				12093ED423B9DBAE0073E0A3 /* UIViewController+ADExtension.h */,
+				12093ED523B9DBAE0073E0A3 /* UIViewController+ADExtension.m */,
+				12093ECB23B9DB710073E0A3 /* UINavigationController+ADExtension.h */,
+				12093ECC23B9DB710073E0A3 /* UINavigationController+ADExtension.m */,
+				12093ED723B9DE200073E0A3 /* ADCustomNavigationBar.h */,
+				12093ED823B9DE200073E0A3 /* ADCustomNavigationBar.m */,
+				12093EDA23B9E2C30073E0A3 /* UIViewController+ADRoute.h */,
+				12093EDB23B9E2C30073E0A3 /* UIViewController+ADRoute.m */,
+			);
+			name = Classes;
+			path = ../../ADNavigationBar/Classes;
+			sourceTree = "<group>";
+		};
 		12F3DFAB23A9B80600843B33 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +180,7 @@
 		6003F593195388D20070C39A /* Example for ADNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				12093EB523B9CF8F0073E0A3 /* Classes */,
 				12F3DFAB23A9B80600843B33 /* Other */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ViewController.h */,
@@ -177,7 +218,6 @@
 				BFA7D3D5A87094633448594C /* Pods-ADNavigationBar_Tests.debug.xcconfig */,
 				853C7505808B297D18E4906A /* Pods-ADNavigationBar_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -347,8 +387,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
+				12093ED023B9DB840073E0A3 /* UINavigationBar+ADDefault.m in Sources */,
+				12093ED323B9DB940073E0A3 /* UINavigationBar+ADExtension.m in Sources */,
 				6003F5A7195388D20070C39A /* ViewController.m in Sources */,
+				12093ED623B9DBAE0073E0A3 /* UIViewController+ADExtension.m in Sources */,
+				12093ECD23B9DB710073E0A3 /* UINavigationController+ADExtension.m in Sources */,
+				12093EDC23B9E2C30073E0A3 /* UIViewController+ADRoute.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				12093ED923B9DE200073E0A3 /* ADCustomNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

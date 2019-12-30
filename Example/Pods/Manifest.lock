@@ -1,0 +1,16 @@
+PODS:
+  - ADNavigationBar (0.1.0)
+
+DEPENDENCIES:
+  - ADNavigationBar (from `../`)
+
+EXTERNAL SOURCES:
+  ADNavigationBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ADNavigationBar: 77e10ab4257aee64555157fe278449537d33cdd6
+
+PODFILE CHECKSUM: 089d4ab2cdab64b7ef86989d5e5923594eff8cbf
+
+COCOAPODS: 1.9.0.beta.2

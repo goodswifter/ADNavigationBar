@@ -20,7 +20,7 @@ platform :ios do
 	# 创建航道
 	# 使用航道 : fastlane ADManagerLibLane tag: target:
 	desc "自动发布Pods版本"
-	lane :JSManagerLibLane do |options|
+	lane :custom_lane do |options|
 
 		# 参数
 		tagName = options[:tag]
@@ -65,7 +65,7 @@ platform :ios do
 		# pod spec lint
 		# pod_lib_lint(allow_warnings: true)
 		# pod repo push XXXX xxx.podspec
-		pod_push(path: "#{targetName}.podspec", repo: "JSOLSpecs", allow_warnings: true) 
+		pod_push(path: "#{targetName}.podspec", allow_warnings: true) 
 	
 	end
 end

@@ -20,7 +20,7 @@ or alternatively using `brew cask install fastlane`
 ```
 fastlane ios custom_lane
 ```
-自动发布Pods版本
+Description of what the lane does
 
 ----
 
