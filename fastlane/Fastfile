@@ -30,7 +30,7 @@ platform :ios do
 		# 具体这个巷道上面执行哪些行为
 		
 		# 1. pod install
-		# cocoapods(clean: true, podfile: "./Example/Podfile", use_bundle_exec: false)
+		cocoapods(clean: true, podfile: "./Example/Podfile", use_bundle_exec: false)
 
 		# 2. 提交代码
 		# git add .
