@@ -20,7 +20,7 @@ platform :ios do
 	# 创建航道
 	# 使用航道 : fastlane ADManagerLibLane tag: target:
 	desc "自动发布Pods版本"
-	lane :custom_lane do |options|
+	lane :ADManagerLibLane do |options|
 
 		# 参数
 		tagName = options[:tag]
@@ -30,7 +30,7 @@ platform :ios do
 		# 具体这个巷道上面执行哪些行为
 		
 		# 1. pod install
-		cocoapods(clean: true, podfile: "./Example/Podfile")
+		# cocoapods(clean: true, podfile: "./Example/Podfile", use_bundle_exec: false)
 
 		# 2. 提交代码
 		# git add .
