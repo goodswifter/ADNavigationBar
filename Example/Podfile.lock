@@ -1,5 +1,5 @@
 PODS:
-  - ADNavigationBar (0.1.2)
+  - ADNavigationBar (0.1.3)
 
 DEPENDENCIES:
   - ADNavigationBar (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ADNavigationBar: 6e832893ae7934d60a9d9916460ea998c50c5ffb
+  ADNavigationBar: c732386ec818b4fb1260028b4a5be83c811d3679
 
 PODFILE CHECKSUM: 089d4ab2cdab64b7ef86989d5e5923594eff8cbf
 

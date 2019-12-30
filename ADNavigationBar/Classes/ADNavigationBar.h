@@ -10,5 +10,6 @@
 #define ADNavigationBar_h
 
 #import "UINavigationBar+ADDefault.h"
+#import "UIViewController+ADExtension.h"
 
 #endif /* ADNavigationBar_h */
