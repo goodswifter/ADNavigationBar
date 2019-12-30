@@ -208,7 +208,12 @@ static int wrPushDisplayCount = 0;
     NSUInteger itemCount = self.navigationBar.items.count;
     NSUInteger n = self.viewControllers.count >= itemCount ? 2 : 1;
     UIViewController *popToVC = self.viewControllers[self.viewControllers.count - n];
-    [self popToViewController:popToVC animated:YES];
+    
+    // TODO : 为什么放到主线程就不会崩溃???
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self popToViewController:popToVC animated:YES];
+    });
+    
     return YES;
 }
 

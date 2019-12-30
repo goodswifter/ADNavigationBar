@@ -20,12 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 局部使用该库       待开发
 //+ (void)ad_local;
-/// 广泛使用该库       default 暂时是默认， ad_local 完成后，ad_local就会变成默认
+/// 广泛使用该库       default 暂时是默认,  ad_local 完成后, ad_local就会变成默认
 + (void)ad_widely;
 
-/// 局部使用该库时，设置需要用到的控制器      待开发
+/// 局部使用该库时, 设置需要用到的控制器      待开发
 //+ (void)ad_setWhitelist:(NSArray<NSString *> *)list;
-/// 广泛使用该库时，设置需要屏蔽的控制器
+/// 广泛使用该库时, 设置需要屏蔽的控制器
 + (void)ad_setBlacklist:(NSArray<NSString *> *)list;
 
 /// set default barTintColor of UINavigationBar

@@ -120,7 +120,7 @@ static char kWRBackgroundImageKey;
 
 - (void)ad_setBarButtonItemsAlpha:(CGFloat)alpha hasSystemBackIndicator:(BOOL)hasSystemBackIndicator {
     for (UIView *view in self.subviews) {
-        if (hasSystemBackIndicator == YES) {   // _UIBarBackground/_UINavigationBarBackground对应的view是系统导航栏，不需要改变其透明度
+        if (hasSystemBackIndicator == YES) {   // _UIBarBackground/_UINavigationBarBackground对应的view是系统导航栏, 不需要改变其透明度
             Class _UIBarBackgroundClass = NSClassFromString(@"_UIBarBackground");
             if (_UIBarBackgroundClass != nil) {
                 if ([view isKindOfClass:_UIBarBackgroundClass] == NO) {
@@ -135,7 +135,7 @@ static char kWRBackgroundImageKey;
                 }
             }
         } else {
-            // 这里如果不做判断的话，会显示 backIndicatorImage
+            // 这里如果不做判断的话, 会显示 backIndicatorImage
             if ([view isKindOfClass:NSClassFromString(@"_UINavigationBarBackIndicatorView")] == NO) {
                 Class _UIBarBackgroundClass = NSClassFromString(@"_UIBarBackground");
                 if (_UIBarBackgroundClass != nil) {
