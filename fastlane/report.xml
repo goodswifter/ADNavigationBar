@@ -41,10 +41,10 @@
     
       
       <testcase classname="fastlane.lanes" name="7: add_git_tag" time="0.018411">
+
         
       </testcase>
     
-      
       <testcase classname="fastlane.lanes" name="8: push_git_tags" time="6.698132">
         
       </testcase>
