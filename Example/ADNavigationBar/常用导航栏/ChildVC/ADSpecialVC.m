@@ -1,22 +1,23 @@
 //
-//  ADNavVC.m
+//  ADSpecialVC.m
 //  ADNavigationBar_Example
 //
-//  Created by 钟爱东 on 2019/12/30.
+//  Created by zhongaidong on 2019/12/31.
 //  Copyright © 2019 goodswifter. All rights reserved.
 //
 
-#import "ADNavVC.h"
+#import "ADSpecialVC.h"
 
-@interface ADNavVC ()
+@interface ADSpecialVC ()
 
 @end
 
-@implementation ADNavVC
+@implementation ADSpecialVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 /*

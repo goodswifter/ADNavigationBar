@@ -1,16 +1,16 @@
 //
-//  ADNormalListVC.h
+//  ADCustomListTVC.h
 //  ADNavigationBar_Example
 //
-//  Created by 钟爱东 on 2019/12/30.
+//  Created by zhongaidong on 2019/12/31.
 //  Copyright © 2019 goodswifter. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ADBaseTVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ADNormalListVC : UIViewController
+@interface ADCustomListTVC : ADBaseTVC
 
 @end
 

@@ -1,18 +1,18 @@
 //
-//  ADNormalListVC.m
+//  ADTestIQKeyVC.m
 //  ADNavigationBar_Example
 //
-//  Created by 钟爱东 on 2019/12/30.
+//  Created by zhongaidong on 2019/12/31.
 //  Copyright © 2019 goodswifter. All rights reserved.
 //
 
-#import "ADNormalListVC.h"
+#import "ADTestIQKeyVC.h"
 
-@interface ADNormalListVC ()
+@interface ADTestIQKeyVC ()
 
 @end
 
-@implementation ADNormalListVC
+@implementation ADTestIQKeyVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

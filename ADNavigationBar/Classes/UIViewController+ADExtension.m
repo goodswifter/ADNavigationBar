@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+ADExtension.h"
-#import "UINavigationBar+ADDefault.h"
+#import "ADNavigationBar+ADDefault.h"
 #import "UIViewController+ADExtension.h"
 #import "UINavigationController+ADExtension.h"
 #import <objc/runtime.h>
@@ -54,13 +54,13 @@ static char kWRSystemNavBarTitleColorKey;
 // navigationBar backgroundImage
 - (UIImage *)ad_navBarBackgroundImage {
     UIImage *image = (UIImage *)objc_getAssociatedObject(self, &kWRNavBarBackgroundImageKey);
-    image = (image == nil) ? [UINavigationBar defaultNavBarBackgroundImage] : image;
+    image = (image == nil) ? [ADNavigationBar defaultNavBarBackgroundImage] : image;
     return image;
 }
 
 - (void)ad_setNavBarBackgroundImage:(UIImage *)image {
-    if ([[self ad_customNavBar] isKindOfClass:[UINavigationBar class]]) {
-    //  UINavigationBar *navBar = (UINavigationBar *)[self ad_customNavBar];
+    if ([[self ad_customNavBar] isKindOfClass:[ADNavigationBar class]]) {
+    //  ADNavigationBar *navBar = (ADNavigationBar *)[self ad_customNavBar];
     //  [navBar ad_setBackgroundImage:image];
     } else {
         objc_setAssociatedObject(self, &kWRNavBarBackgroundImageKey, image, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -78,20 +78,20 @@ static char kWRSystemNavBarTitleColorKey;
 
 - (UIColor *)ad_navBarBarTintColor {
     UIColor *barTintColor = (UIColor *)objc_getAssociatedObject(self, &kWRNavBarBarTintColorKey);
-    if (![UINavigationBar needUpdateNavigationBar:self]) {
+    if (![ADNavigationBar needUpdateNavigationBar:self]) {
         if ([self ad_systemNavBarBarTintColor] == nil) {
             barTintColor = self.navigationController.navigationBar.barTintColor;
         } else {
             barTintColor = [self ad_systemNavBarBarTintColor];
         }
     }
-    return (barTintColor != nil) ? barTintColor : [UINavigationBar defaultNavBarBarTintColor];
+    return (barTintColor != nil) ? barTintColor : [ADNavigationBar defaultNavBarBarTintColor];
 }
 
 - (void)ad_setNavBarBarTintColor:(UIColor *)color {
     objc_setAssociatedObject(self, &kWRNavBarBarTintColorKey, color, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    if ([[self ad_customNavBar] isKindOfClass:[UINavigationBar class]]) {
-    //  UINavigationBar *navBar = (UINavigationBar *)[self ad_customNavBar];
+    if ([[self ad_customNavBar] isKindOfClass:[ADNavigationBar class]]) {
+    //  ADNavigationBar *navBar = (ADNavigationBar *)[self ad_customNavBar];
     //  [navBar ad_setBackgroundColor:color];
     } else {
         BOOL isRootViewController = (self.navigationController.viewControllers.firstObject == self);
@@ -104,13 +104,13 @@ static char kWRSystemNavBarTitleColorKey;
 // navigationBar _UIBarBackground alpha
 - (CGFloat)ad_navBarBackgroundAlpha {
     id barBackgroundAlpha = objc_getAssociatedObject(self, &kWRNavBarBackgroundAlphaKey);
-    return (barBackgroundAlpha != nil) ? [barBackgroundAlpha floatValue] : [UINavigationBar defaultNavBarBackgroundAlpha];
+    return (barBackgroundAlpha != nil) ? [barBackgroundAlpha floatValue] : [ADNavigationBar defaultNavBarBackgroundAlpha];
 }
 
 - (void)ad_setNavBarBackgroundAlpha:(CGFloat)alpha {
     objc_setAssociatedObject(self, &kWRNavBarBackgroundAlphaKey, @(alpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    if ([[self ad_customNavBar] isKindOfClass:[UINavigationBar class]]) {
-    //  UINavigationBar *navBar = (UINavigationBar *)[self ad_customNavBar];
+    if ([[self ad_customNavBar] isKindOfClass:[ADNavigationBar class]]) {
+    //  ADNavigationBar *navBar = (ADNavigationBar *)[self ad_customNavBar];
     //  [navBar ad_setBackgroundAlpha:alpha];
     } else {
         BOOL isRootViewController = (self.navigationController.viewControllers.firstObject == self);
@@ -132,20 +132,20 @@ static char kWRSystemNavBarTitleColorKey;
 // navigationBar tintColor
 - (UIColor *)ad_navBarTintColor {
     UIColor *tintColor = (UIColor *)objc_getAssociatedObject(self, &kWRNavBarTintColorKey);
-    if (![UINavigationBar needUpdateNavigationBar:self]) {
+    if (![ADNavigationBar needUpdateNavigationBar:self]) {
         if ([self ad_systemNavBarTintColor] == nil) {
             tintColor = self.navigationController.navigationBar.tintColor;
         } else {
             tintColor = [self ad_systemNavBarTintColor];
         }
     }
-    return (tintColor != nil) ? tintColor : [UINavigationBar defaultNavBarTintColor];
+    return (tintColor != nil) ? tintColor : [ADNavigationBar defaultNavBarTintColor];
 }
 
 - (void)ad_setNavBarTintColor:(UIColor *)color {
     objc_setAssociatedObject(self, &kWRNavBarTintColorKey, color, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    if ([[self ad_customNavBar] isKindOfClass:[UINavigationBar class]]) {
-    //  UINavigationBar *navBar = (UINavigationBar *)[self ad_customNavBar];
+    if ([[self ad_customNavBar] isKindOfClass:[ADNavigationBar class]]) {
+    //  ADNavigationBar *navBar = (ADNavigationBar *)[self ad_customNavBar];
     //  navBar.tintColor = color;
     } else {
         if ([self pushToNextVCFinished] == NO) {
@@ -166,20 +166,20 @@ static char kWRSystemNavBarTitleColorKey;
 // navigationBarTitleColor
 - (UIColor *)ad_navBarTitleColor {
     UIColor *titleColor = (UIColor *)objc_getAssociatedObject(self, &kWRNavBarTitleColorKey);
-    if (![UINavigationBar needUpdateNavigationBar:self]) {
+    if (![ADNavigationBar needUpdateNavigationBar:self]) {
         if ([self ad_systemNavBarTitleColor] == nil) {
             titleColor = self.navigationController.navigationBar.titleTextAttributes[@"NSColor"];
         } else {
             titleColor = [self ad_systemNavBarTitleColor];
         }
     }
-    return (titleColor != nil) ? titleColor : [UINavigationBar defaultNavBarTitleColor];
+    return (titleColor != nil) ? titleColor : [ADNavigationBar defaultNavBarTitleColor];
 }
 
 - (void)ad_setNavBarTitleColor:(UIColor *)color {
     objc_setAssociatedObject(self, &kWRNavBarTitleColorKey, color, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    if ([[self ad_customNavBar] isKindOfClass:[UINavigationBar class]]) {
-    //  UINavigationBar *navBar = (UINavigationBar *)[self ad_customNavBar];
+    if ([[self ad_customNavBar] isKindOfClass:[ADNavigationBar class]]) {
+    //  ADNavigationBar *navBar = (ADNavigationBar *)[self ad_customNavBar];
     //  navBar.titleTextAttributes = @{NSForegroundColorAttributeName:color};
     } else {
         if ([self pushToNextVCFinished] == NO) {
@@ -191,7 +191,7 @@ static char kWRSystemNavBarTitleColorKey;
 // statusBarStyle
 - (UIStatusBarStyle)ad_statusBarStyle {
     id style = objc_getAssociatedObject(self, &kWRStatusBarStyleKey);
-    return (style != nil) ? [style integerValue] : [UINavigationBar defaultStatusBarStyle];
+    return (style != nil) ? [style integerValue] : [ADNavigationBar defaultStatusBarStyle];
 }
 
 - (void)ad_setStatusBarStyle:(UIStatusBarStyle)style {
@@ -207,7 +207,7 @@ static char kWRSystemNavBarTitleColorKey;
 
 - (BOOL)ad_navBarShadowImageHidden {
     id hidden = objc_getAssociatedObject(self, &kWRNavBarShadowImageHiddenKey);
-    return (hidden != nil) ? [hidden boolValue] : [UINavigationBar defaultNavBarShadowImageHidden];
+    return (hidden != nil) ? [hidden boolValue] : [ADNavigationBar defaultNavBarShadowImageHidden];
 }
 
 // custom navigationBar
@@ -216,7 +216,7 @@ static char kWRSystemNavBarTitleColorKey;
     return (navBar != nil) ? navBar : [UIView new];
 }
 
-- (void)ad_setCustomNavBar:(UINavigationBar *)navBar {
+- (void)ad_setCustomNavBar:(ADNavigationBar *)navBar {
     objc_setAssociatedObject(self, &kWRCustomNavBarKey, navBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -242,7 +242,7 @@ static char kWRSystemNavBarTitleColorKey;
 
 - (void)ad_viewWillAppear:(BOOL)animated {
     if ([self canUpdateNavigationBar]) {
-        if (![UINavigationBar needUpdateNavigationBar:self]) {
+        if (![ADNavigationBar needUpdateNavigationBar:self]) {
             if ([self ad_systemNavBarBarTintColor] == nil) {
                 [self ad_setSystemNavBarBarTintColor:[self ad_navBarBarTintColor]];
             }
@@ -278,7 +278,7 @@ static char kWRSystemNavBarTitleColorKey;
         if (barBgImage != nil) {
             [self.navigationController setNeedsNavigationBarUpdateForBarBackgroundImage:barBgImage];
         } else {
-            if ([UINavigationBar needUpdateNavigationBar:self]) {
+            if ([ADNavigationBar needUpdateNavigationBar:self]) {
                 [self.navigationController setNeedsNavigationBarUpdateForBarTintColor:[self ad_navBarBarTintColor]];
             }
         }
@@ -291,7 +291,7 @@ static char kWRSystemNavBarTitleColorKey;
 }
 
 - (void)ad_viewDidDisappear:(BOOL)animated {
-    if (![UINavigationBar needUpdateNavigationBar:self] && !self.navigationController) {
+    if (![ADNavigationBar needUpdateNavigationBar:self] && !self.navigationController) {
         [self ad_setSystemNavBarBarTintColor:nil];
         [self ad_setSystemNavBarTintColor:nil];
         [self ad_setSystemNavBarTitleColor:nil];

@@ -9,7 +9,7 @@
 #import "UINavigationController+ADExtension.h"
 #import "UIViewController+ADExtension.h"
 #import "UINavigationBar+ADExtension.h"
-#import "UINavigationBar+ADDefault.h"
+#import "ADNavigationBar+ADDefault.h"
 #import <objc/runtime.h>
 
 @implementation UINavigationController (ADExtension)
@@ -69,29 +69,29 @@ static int wrPushDisplayCount = 0;
     // change navBarBarTintColor
     UIColor *fromBarTintColor = [fromVC ad_navBarBarTintColor];
     UIColor *toBarTintColor = [toVC ad_navBarBarTintColor];
-    UIColor *newBarTintColor = [UINavigationBar middleColor:fromBarTintColor toColor:toBarTintColor percent:progress];
-    if ([UINavigationBar needUpdateNavigationBar:fromVC] || [UINavigationBar needUpdateNavigationBar:toVC]) {
+    UIColor *newBarTintColor = [ADNavigationBar middleColor:fromBarTintColor toColor:toBarTintColor percent:progress];
+    if ([ADNavigationBar needUpdateNavigationBar:fromVC] || [ADNavigationBar needUpdateNavigationBar:toVC]) {
         [self setNeedsNavigationBarUpdateForBarTintColor:newBarTintColor];
     }
     
     // change navBarTintColor
     UIColor *fromTintColor = [fromVC ad_navBarTintColor];
     UIColor *toTintColor = [toVC ad_navBarTintColor];
-    UIColor *newTintColor = [UINavigationBar middleColor:fromTintColor toColor:toTintColor percent:progress];
-    if ([UINavigationBar needUpdateNavigationBar:fromVC]) {
+    UIColor *newTintColor = [ADNavigationBar middleColor:fromTintColor toColor:toTintColor percent:progress];
+    if ([ADNavigationBar needUpdateNavigationBar:fromVC]) {
         [self setNeedsNavigationBarUpdateForTintColor:newTintColor];
     }
 
     // change navBarTitleColor（在ad_popToViewController:animated:方法中直接改变标题颜色）
     UIColor *fromTitleColor = [fromVC ad_navBarTitleColor];
     UIColor *toTitleColor = [toVC ad_navBarTitleColor];
-    UIColor *newTitleColor = [UINavigationBar middleColor:fromTitleColor toColor:toTitleColor percent:progress];
+    UIColor *newTitleColor = [ADNavigationBar middleColor:fromTitleColor toColor:toTitleColor percent:progress];
     [self setNeedsNavigationBarUpdateForTitleColor:newTitleColor];
     
     // change navBar _UIBarBackground alpha
     CGFloat fromBarBackgroundAlpha = [fromVC ad_navBarBackgroundAlpha];
     CGFloat toBarBackgroundAlpha = [toVC ad_navBarBackgroundAlpha];
-    CGFloat newBarBackgroundAlpha = [UINavigationBar middleAlpha:fromBarBackgroundAlpha toAlpha:toBarBackgroundAlpha percent:progress];
+    CGFloat newBarBackgroundAlpha = [ADNavigationBar middleAlpha:fromBarBackgroundAlpha toAlpha:toBarBackgroundAlpha percent:progress];
     [self setNeedsNavigationBarUpdateForBarBackgroundAlpha:newBarBackgroundAlpha];
 }
 

@@ -1,22 +1,16 @@
 //
-//  UINavigationBar+ADDefault.h
+//  ADNavigationBar+ADDefault.h
 //  ADNavigationBar_Example
 //
-//  Created by zhongaidong on 2019/12/30.
+//  Created by zhongaidong on 2019/12/31.
 //  Copyright © 2019 goodswifter. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ADNavigationBar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UINavigationBar (ADDefault)
-
-+ (BOOL)isIphoneX;
-+ (CGFloat)navBarAndStatusBarHeight;
-+ (CGFloat)tabBarHeight;
-+ (CGFloat)screenWidth;
-+ (CGFloat)screenHeight;
+@interface ADNavigationBar (ADDefault)
 
 /// 局部使用该库       待开发
 //+ (void)ad_local;

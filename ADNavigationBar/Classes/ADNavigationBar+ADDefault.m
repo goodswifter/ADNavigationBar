@@ -1,18 +1,18 @@
 //
-//  UINavigationBar+ADDefault.m
+//  ADNavigationBar+ADDefault.m
 //  ADNavigationBar_Example
 //
-//  Created by zhongaidong on 2019/12/30.
+//  Created by zhongaidong on 2019/12/31.
 //  Copyright © 2019 goodswifter. All rights reserved.
 //
 
-#import "UINavigationBar+ADDefault.h"
+#import "ADNavigationBar+ADDefault.h"
 #import <objc/runtime.h>
 
 //=============================================================================
 #pragma mark - default navigationBar barTintColor、tintColor and statusBarStyle YOU CAN CHANGE!!!
 //=============================================================================
-@implementation UINavigationBar (ADDefault)
+@implementation ADNavigationBar (ADDefault)
 
 static char kWRIsLocalUsedKey;
 static char kWRWhiteistKey;
@@ -24,26 +24,6 @@ static char kWRDefaultNavBarTintColorKey;
 static char kWRDefaultNavBarTitleColorKey;
 static char kWRDefaultStatusBarStyleKey;
 static char kWRDefaultNavBarShadowImageHiddenKey;
-
-+ (BOOL)isIphoneX {
-    return ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) && ((int)([UIScreen mainScreen].bounds.size.width / [UIScreen mainScreen].bounds.size.height * 100) == 216 || (int)([UIScreen mainScreen].bounds.size.width / [UIScreen mainScreen].bounds.size.height * 100) == 46);
-}
-
-+ (CGFloat)navBarAndStatusBarHeight {
-    return [self isIphoneX] ? 88 : 64;
-}
-
-+ (CGFloat)tabBarHeight {
-    return [self isIphoneX] ? 83 : 49;
-}
-
-+ (CGFloat)screenWidth {
-    return [UIScreen mainScreen].bounds.size.width;
-}
-
-+ (CGFloat)screenHeight {
-    return [UIScreen mainScreen].bounds.size.height;
-}
 
 + (BOOL)isLocalUsed {
     id isLocal = objc_getAssociatedObject(self, &kWRIsLocalUsedKey);

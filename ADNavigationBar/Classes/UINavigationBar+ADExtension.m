@@ -7,7 +7,8 @@
 //
 
 #import "UINavigationBar+ADExtension.h"
-#import "UINavigationBar+ADDefault.h"
+#import "ADNavigationBar+ADDefault.h"
+#import "ADNavigationBar.h"
 #import <objc/runtime.h>
 
 //=============================================================================
@@ -58,7 +59,7 @@ static char kWRBackgroundImageKey;
         // add a image(nil color) to _UIBarBackground make it clear
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
         if (self.subviews.count > 0) {
-            self.backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), [UINavigationBar navBarAndStatusBarHeight])];
+            self.backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), [ADNavigationBar navBarAndStatusBarHeight])];
             self.backgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             
             // _UIBarBackground is first subView for navigationBar
@@ -77,8 +78,7 @@ static char kWRBackgroundImageKey;
     if (self.backgroundView == nil) {
         // add a image(nil color) to _UIBarBackground make it clear
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-        NSLog(@"== %f", [UINavigationBar navBarAndStatusBarHeight]);
-        self.backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), [UINavigationBar navBarAndStatusBarHeight])];
+        self.backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), [ADNavigationBar navBarAndStatusBarHeight])];
         self.backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         // _UIBarBackground is first subView for navigationBar
         [self.subviews.firstObject insertSubview:self.backgroundView atIndex:0];
@@ -100,7 +100,7 @@ static char kWRBackgroundImageKey;
         Class _UIBarBackgroundClass = NSClassFromString(@"_UIBarBackground");
         if (_UIBarBackgroundClass != nil) {
             if ([view isKindOfClass:_UIBarBackgroundClass]) {
-                view.frame = CGRectMake(0, self.frame.size.height - [UINavigationBar navBarAndStatusBarHeight], [UINavigationBar screenWidth], [UINavigationBar navBarAndStatusBarHeight]);
+                view.frame = CGRectMake(0, self.frame.size.height - [ADNavigationBar navBarAndStatusBarHeight], [ADNavigationBar screenWidth], [ADNavigationBar navBarAndStatusBarHeight]);
             }
         }
     }
