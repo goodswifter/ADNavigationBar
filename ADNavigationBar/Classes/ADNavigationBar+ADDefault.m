@@ -15,8 +15,8 @@
 @implementation ADNavigationBar (ADDefault)
 
 static char kWRIsLocalUsedKey;
-static char kWRWhiteistKey;
-static char kWRBlacklistKey;
+static char kWRWhiteListKey;
+static char kWRBlackListKey;
 
 static char kWRDefaultNavBarBarTintColorKey;
 static char kWRDefaultNavBarBackgroundImageKey;
@@ -38,33 +38,33 @@ static char kWRDefaultNavBarShadowImageHiddenKey;
     objc_setAssociatedObject(self, &kWRIsLocalUsedKey, @(NO), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-+ (NSArray<NSString *> *)whitelist {
-    NSArray<NSString *> *list = (NSArray<NSString *> *)objc_getAssociatedObject(self, &kWRWhiteistKey);
++ (NSArray<NSString *> *)whiteList {
+    NSArray<NSString *> *list = (NSArray<NSString *> *)objc_getAssociatedObject(self, &kWRWhiteListKey);
     return (list != nil) ? list : nil;
 }
 
-+ (void)ad_setWhitelist:(NSArray<NSString *> *)list {
++ (void)ad_setWhiteList:(NSArray<NSString *> *)list {
     NSAssert([self isLocalUsed], @"白名单是在设置 局部使用 该库的情况下使用的");
-    objc_setAssociatedObject(self, &kWRWhiteistKey, list, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, &kWRWhiteListKey, list, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-+ (NSArray<NSString *> *)blacklist {
-    NSArray<NSString *> *list = (NSArray<NSString *> *)objc_getAssociatedObject(self, &kWRBlacklistKey);
++ (NSArray<NSString *> *)blackList {
+    NSArray<NSString *> *list = (NSArray<NSString *> *)objc_getAssociatedObject(self, &kWRBlackListKey);
     return (list != nil) ? list : nil;
 }
 
-+ (void)ad_setBlacklist:(NSArray<NSString *> *)list {
++ (void)ad_setBlackList:(NSArray<NSString *> *)list {
     NSAssert(list, @"list 不能设置为nil");
     NSAssert(![self isLocalUsed], @"黑名单是在设置 广泛使用 该库的情况下使用的");
-    objc_setAssociatedObject(self, &kWRBlacklistKey, list, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, &kWRBlackListKey, list, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 + (BOOL)needUpdateNavigationBar:(UIViewController *)vc {
     NSString *vcStr = NSStringFromClass(vc.class);
     if ([self isLocalUsed]) {
-        return [[self whitelist] containsObject:vcStr]; // 当白名单里 有 表示需要更新
+        return [[self whiteList] containsObject:vcStr]; // 当白名单里 有 表示需要更新
     } else {
-        return ![[self blacklist] containsObject:vcStr];// 当黑名单里 没有 表示需要更新
+        return ![[self blackList] containsObject:vcStr];// 当黑名单里 没有 表示需要更新
     }
 }
 

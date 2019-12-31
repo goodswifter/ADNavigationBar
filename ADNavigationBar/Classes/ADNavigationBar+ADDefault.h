@@ -18,9 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)ad_widely;
 
 /// 局部使用该库时, 设置需要用到的控制器      待开发
-//+ (void)ad_setWhitelist:(NSArray<NSString *> *)list;
+//+ (void)ad_setWhiteList:(NSArray<NSString *> *)list;
 /// 广泛使用该库时, 设置需要屏蔽的控制器
-+ (void)ad_setBlacklist:(NSArray<NSString *> *)list;
++ (void)ad_setBlackList:(NSArray<NSString *> *)list;
 
 /// set default barTintColor of UINavigationBar
 + (void)ad_setDefaultNavBarBarTintColor:(UIColor *)color;
