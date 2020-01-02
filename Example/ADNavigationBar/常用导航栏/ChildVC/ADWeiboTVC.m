@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 修改默认的contentInset
     if (@available(iOS 11.0, *)){
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
@@ -34,8 +35,10 @@
     contentView.autoresizingMask = UIViewAutoresizingNone;
     self.tableView.tableHeaderView = contentView;
     
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:24]}];
+    
     // 设置导航栏颜色
-    [self ad_setNavBarBarTintColor:[UIColor colorWithRed:247/255.0 green:247/255.0 blue:247/255.0 alpha:1.0]];
+    [self ad_setNavBarBarTintColor:[UIColor whiteColor]];
     
     // 设置初始导航栏透明度
     [self ad_setNavBarBackgroundAlpha:0];
@@ -53,10 +56,8 @@
         [self ad_setNavBarTintColor:[[UIColor blackColor] colorWithAlphaComponent:alpha]];
         [self ad_setNavBarTitleColor:[[UIColor blackColor] colorWithAlphaComponent:alpha]];
         [self ad_setStatusBarStyle:UIStatusBarStyleDefault];
-        self.title = @"goodswifter";
-    }
-    else
-    {
+        self.title = @"我的";
+    } else {
         [self ad_setNavBarBackgroundAlpha:0];
         [self ad_setNavBarTintColor:[UIColor whiteColor]];
         [self ad_setNavBarTitleColor:[UIColor whiteColor]];
