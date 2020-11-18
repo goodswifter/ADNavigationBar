@@ -1,6 +1,6 @@
 {
   "name": "ADNavigationBar",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "summary": "ADNavigationBar.",
   "description": "ADNavigationBar description",
   "homepage": "https://github.com/goodswifter/ADNavigationBar",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/goodswifter/ADNavigationBar.git",
-    "tag": "0.1.6"
+    "tag": "0.1.7"
   },
   "platforms": {
     "ios": "9.0"
