@@ -38,13 +38,6 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		8A09D7CA23BA3AC3003A51DC /* ADNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A09D7C923BA3AC3003A51DC /* ADNavVC.m */; };
-		8A0DDC83242072B1002734B4 /* UIViewController+ADExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DDC74242072B0002734B4 /* UIViewController+ADExtension.m */; };
-		8A0DDC84242072B1002734B4 /* ADNavigationBar+ADDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DDC78242072B1002734B4 /* ADNavigationBar+ADDefault.m */; };
-		8A0DDC85242072B1002734B4 /* UINavigationBar+ADExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DDC7A242072B1002734B4 /* UINavigationBar+ADExtension.m */; };
-		8A0DDC86242072B1002734B4 /* ADCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DDC7C242072B1002734B4 /* ADCustomNavigationBar.m */; };
-		8A0DDC87242072B1002734B4 /* UIViewController+ADRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DDC7D242072B1002734B4 /* UIViewController+ADRoute.m */; };
-		8A0DDC88242072B1002734B4 /* UINavigationController+ADExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DDC80242072B1002734B4 /* UINavigationController+ADExtension.m */; };
-		8A0DDC89242072B1002734B4 /* ADNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DDC81242072B1002734B4 /* ADNavigationBar.m */; };
 		90E4EFBDCEF85524D1F1C01E /* Pods_ADNavigationBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3AC6524DAF3C535B002BF9 /* Pods_ADNavigationBar_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -120,21 +113,6 @@
 		853C7505808B297D18E4906A /* Pods-ADNavigationBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNavigationBar_Tests.release.xcconfig"; path = "Target Support Files/Pods-ADNavigationBar_Tests/Pods-ADNavigationBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8A09D7C823BA3AC3003A51DC /* ADNavVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavVC.h; sourceTree = "<group>"; };
 		8A09D7C923BA3AC3003A51DC /* ADNavVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavVC.m; sourceTree = "<group>"; };
-		8A0DDC74242072B0002734B4 /* UIViewController+ADExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ADExtension.m"; path = "../../../ADNavigationBar/Classes/UIViewController+ADExtension.m"; sourceTree = "<group>"; };
-		8A0DDC75242072B0002734B4 /* UINavigationBar+ADExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+ADExtension.h"; path = "../../../ADNavigationBar/Classes/UINavigationBar+ADExtension.h"; sourceTree = "<group>"; };
-		8A0DDC76242072B0002734B4 /* UIViewController+ADExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ADExtension.h"; path = "../../../ADNavigationBar/Classes/UIViewController+ADExtension.h"; sourceTree = "<group>"; };
-		8A0DDC77242072B1002734B4 /* ADCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADCustomNavigationBar.h; path = ../../../ADNavigationBar/Classes/ADCustomNavigationBar.h; sourceTree = "<group>"; };
-		8A0DDC78242072B1002734B4 /* ADNavigationBar+ADDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADNavigationBar+ADDefault.m"; path = "../../../ADNavigationBar/Classes/ADNavigationBar+ADDefault.m"; sourceTree = "<group>"; };
-		8A0DDC79242072B1002734B4 /* ADNavigationBar+ADDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADNavigationBar+ADDefault.h"; path = "../../../ADNavigationBar/Classes/ADNavigationBar+ADDefault.h"; sourceTree = "<group>"; };
-		8A0DDC7A242072B1002734B4 /* UINavigationBar+ADExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+ADExtension.m"; path = "../../../ADNavigationBar/Classes/UINavigationBar+ADExtension.m"; sourceTree = "<group>"; };
-		8A0DDC7B242072B1002734B4 /* ADNavigationBarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNavigationBarHeader.h; path = ../../../ADNavigationBar/Classes/ADNavigationBarHeader.h; sourceTree = "<group>"; };
-		8A0DDC7C242072B1002734B4 /* ADCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADCustomNavigationBar.m; path = ../../../ADNavigationBar/Classes/ADCustomNavigationBar.m; sourceTree = "<group>"; };
-		8A0DDC7D242072B1002734B4 /* UIViewController+ADRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ADRoute.m"; path = "../../../ADNavigationBar/Classes/UIViewController+ADRoute.m"; sourceTree = "<group>"; };
-		8A0DDC7E242072B1002734B4 /* UINavigationController+ADExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+ADExtension.h"; path = "../../../ADNavigationBar/Classes/UINavigationController+ADExtension.h"; sourceTree = "<group>"; };
-		8A0DDC7F242072B1002734B4 /* ADNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNavigationBar.h; path = ../../../ADNavigationBar/Classes/ADNavigationBar.h; sourceTree = "<group>"; };
-		8A0DDC80242072B1002734B4 /* UINavigationController+ADExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+ADExtension.m"; path = "../../../ADNavigationBar/Classes/UINavigationController+ADExtension.m"; sourceTree = "<group>"; };
-		8A0DDC81242072B1002734B4 /* ADNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNavigationBar.m; path = ../../../ADNavigationBar/Classes/ADNavigationBar.m; sourceTree = "<group>"; };
-		8A0DDC82242072B1002734B4 /* UIViewController+ADRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ADRoute.h"; path = "../../../ADNavigationBar/Classes/UIViewController+ADRoute.h"; sourceTree = "<group>"; };
 		BC97F88D373509F1E2AE0783 /* ADNavigationBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ADNavigationBar.podspec; path = ../ADNavigationBar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BFA7D3D5A87094633448594C /* Pods-ADNavigationBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNavigationBar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ADNavigationBar_Tests/Pods-ADNavigationBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD3AC6524DAF3C535B002BF9 /* Pods_ADNavigationBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADNavigationBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,7 +274,6 @@
 		6003F593195388D20070C39A /* Example for ADNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				8A0DDC73242072A3002734B4 /* Classes */,
 				12093EDD23BAE9B40073E0A3 /* Global */,
 				12F3DFAB23A9B80600843B33 /* Other */,
 				8A09D7CB23BA3ADA003A51DC /* 常用导航栏 */,
@@ -348,28 +325,6 @@
 				12093EEB23BAEB520073E0A3 /* ADNormalListTVC.m */,
 			);
 			path = "常用导航栏";
-			sourceTree = "<group>";
-		};
-		8A0DDC73242072A3002734B4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8A0DDC77242072B1002734B4 /* ADCustomNavigationBar.h */,
-				8A0DDC7C242072B1002734B4 /* ADCustomNavigationBar.m */,
-				8A0DDC7F242072B1002734B4 /* ADNavigationBar.h */,
-				8A0DDC81242072B1002734B4 /* ADNavigationBar.m */,
-				8A0DDC79242072B1002734B4 /* ADNavigationBar+ADDefault.h */,
-				8A0DDC78242072B1002734B4 /* ADNavigationBar+ADDefault.m */,
-				8A0DDC7B242072B1002734B4 /* ADNavigationBarHeader.h */,
-				8A0DDC75242072B0002734B4 /* UINavigationBar+ADExtension.h */,
-				8A0DDC7A242072B1002734B4 /* UINavigationBar+ADExtension.m */,
-				8A0DDC7E242072B1002734B4 /* UINavigationController+ADExtension.h */,
-				8A0DDC80242072B1002734B4 /* UINavigationController+ADExtension.m */,
-				8A0DDC76242072B0002734B4 /* UIViewController+ADExtension.h */,
-				8A0DDC74242072B0002734B4 /* UIViewController+ADExtension.m */,
-				8A0DDC82242072B1002734B4 /* UIViewController+ADRoute.h */,
-				8A0DDC7D242072B1002734B4 /* UIViewController+ADRoute.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,22 +494,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A0DDC86242072B1002734B4 /* ADCustomNavigationBar.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				120940A423BB16490073E0A3 /* ADQQMineTVC.m in Sources */,
-				8A0DDC87242072B1002734B4 /* UIViewController+ADRoute.m in Sources */,
 				12093EEC23BAEB520073E0A3 /* ADNormalListTVC.m in Sources */,
 				120940B023BB174C0073E0A3 /* ADSpecialVC.m in Sources */,
 				12093EE323BAE9DA0073E0A3 /* ADBaseVC.m in Sources */,
 				120940B723BB19300073E0A3 /* ADWeiboHeaderView.m in Sources */,
 				12093EE023BAE9CC0073E0A3 /* ADBaseTVC.m in Sources */,
 				120940B323BB17740073E0A3 /* ADTestIQKeyVC.m in Sources */,
-				8A0DDC89242072B1002734B4 /* ADNavigationBar.m in Sources */,
-				8A0DDC85242072B1002734B4 /* UINavigationBar+ADExtension.m in Sources */,
 				12093F6C23BB05780073E0A3 /* ADQQZoneTVC.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				8A0DDC84242072B1002734B4 /* ADNavigationBar+ADDefault.m in Sources */,
-				8A0DDC88242072B1002734B4 /* UINavigationController+ADExtension.m in Sources */,
 				12093F6F23BB05F10073E0A3 /* ADZhihuTVC.m in Sources */,
 				120940BD23BB23E50073E0A3 /* UIView+ADExtension.m in Sources */,
 				12093F6323BB03550073E0A3 /* ADTestTVC.m in Sources */,
@@ -564,7 +513,6 @@
 				12093F2823BB01630073E0A3 /* ADMoveListTVC.m in Sources */,
 				12093F6923BB055E0073E0A3 /* ADQQTVC.m in Sources */,
 				8A09D7CA23BA3AC3003A51DC /* ADNavVC.m in Sources */,
-				8A0DDC83242072B1002734B4 /* UIViewController+ADExtension.m in Sources */,
 				120940AD23BB17190073E0A3 /* ADLaGouTVC.m in Sources */,
 				12093F6623BB03EA0073E0A3 /* ADWeiboTVC.m in Sources */,
 			);

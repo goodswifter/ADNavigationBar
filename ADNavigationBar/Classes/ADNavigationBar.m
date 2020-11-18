@@ -15,11 +15,21 @@
 }
 
 + (CGFloat)navBarAndStatusBarHeight {
-    return [self isIphoneX] ? 88 : 64;
+    return [self statusBarHeight] + 44;
 }
 
 + (CGFloat)tabBarHeight {
     return [self isIphoneX] ? 83 : 49;
+}
+
++ (CGFloat)statusBarHeight {
+    CGFloat statusBarHeight = 0;
+    if (@available(iOS 13.0, *)) {
+        statusBarHeight = [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height;
+    } else {
+        statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    }
+    return statusBarHeight;
 }
 
 + (CGFloat)screenWidth {
