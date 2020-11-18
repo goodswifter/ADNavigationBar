@@ -5,52 +5,47 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.009314">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.007234">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: cocoapods" time="2.119259">
+      <testcase classname="fastlane.lanes" name="1: cocoapods" time="1.694715">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: git_add" time="0.028488">
+      <testcase classname="fastlane.lanes" name="2: git_add" time="0.024993">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: git_commit" time="0.055667">
+      <testcase classname="fastlane.lanes" name="3: git_commit" time="0.058925">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: push_to_git_remote" time="7.222069">
+      <testcase classname="fastlane.lanes" name="4: push_to_git_remote" time="6.206375">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: git_tag_exists" time="0.016754">
+      <testcase classname="fastlane.lanes" name="5: git_tag_exists" time="0.015111">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: remove_tag" time="5.477289">
+      <testcase classname="fastlane.lanes" name="6: add_git_tag" time="0.019523">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: add_git_tag" time="0.026307">
+      <testcase classname="fastlane.lanes" name="7: push_git_tags" time="6.217929">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="8: push_git_tags" time="5.426605">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="9: pod_push" time="108.242872">
+      <testcase classname="fastlane.lanes" name="8: pod_push" time="130.545186">
         
       </testcase>
     
