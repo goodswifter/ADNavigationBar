@@ -66,7 +66,7 @@
 //    [UINavigationBar appearance].barTintColor = [UIColor redColor];
     
     // 设置是 广泛使用ADNavigationBar, 还是局部使用ADNavigationBar, 目前默认是广泛使用
-    [ADNavigationBar ad_widely];
+//    [ADNavigationBar ad_widely];
 //    [UINavigationBar ad_setBlackList:@[@"SpecialController",
 //                                       @"TZPhotoPickerController",
 //                                       @"TZGifPhotoPreviewController",
@@ -74,16 +74,16 @@
 //                                       @"TZPhotoPreviewController",
 //                                       @"TZVideoPlayerController"]];
     
-    // 设置导航栏默认的背景颜色
-    [ADNavigationBar ad_setDefaultNavBarBarTintColor:[UIColor redColor]];
-    // 设置导航栏所有按钮的默认颜色
-    [ADNavigationBar ad_setDefaultNavBarTintColor:[UIColor yellowColor]];
-    // 设置导航栏标题默认颜色
-    [ADNavigationBar ad_setDefaultNavBarTitleColor:[UIColor greenColor]];
-    // 统一设置状态栏样式
-    [ADNavigationBar ad_setDefaultStatusBarStyle:UIStatusBarStyleLightContent];
-    // 如果需要设置导航栏底部分割线隐藏, 可以在这里统一设置
-    [ADNavigationBar ad_setDefaultNavBarShadowImageHidden:YES];
+//    // 设置导航栏默认的背景颜色
+//    [ADNavigationBar ad_setDefaultNavBarBarTintColor:[UIColor redColor]];
+//    // 设置导航栏所有按钮的默认颜色
+//    [ADNavigationBar ad_setDefaultNavBarTintColor:[UIColor yellowColor]];
+//    // 设置导航栏标题默认颜色
+//    [ADNavigationBar ad_setDefaultNavBarTitleColor:[UIColor greenColor]];
+//    // 统一设置状态栏样式
+//    [ADNavigationBar ad_setDefaultStatusBarStyle:UIStatusBarStyleLightContent];
+//    // 如果需要设置导航栏底部分割线隐藏, 可以在这里统一设置
+//    [ADNavigationBar ad_setDefaultNavBarShadowImageHidden:YES];
 }
 
 @end
