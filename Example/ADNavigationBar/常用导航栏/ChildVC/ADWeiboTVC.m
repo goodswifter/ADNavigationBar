@@ -42,13 +42,18 @@
     self.tableView.tableHeaderView = contentView;
     
     // 设置导航栏颜色
-    [self ad_setNavBarBarTintColor:[UIColor redColor]];
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+//    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+//    [ADNavigationBar ad_setDefaultStatusBarStyle:UIStatusBarStyleLightContent];
+    [self setNeedsStatusBarAppearanceUpdate];
     
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:24]}];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_info_white"] style:UIBarButtonItemStylePlain target:self action:@selector(info)];
 }
+
+//- (UIStatusBarStyle)preferredStatusBarStyle {
+//    return UIStatusBarStyleLightContent;
+//}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -62,7 +67,8 @@
     [self ad_setNavBarBackgroundAlpha:1];
     // 设置导航栏颜色
     [self ad_setNavBarBarTintColor:[UIColor greenColor]];
-    self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
+//    self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
+    [self ad_setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 - (void)info {
@@ -84,16 +90,16 @@
         [self ad_setNavBarBackgroundAlpha:alpha];
         [self ad_setNavBarTintColor:[[UIColor blackColor] colorWithAlphaComponent:alpha]];
         [self ad_setNavBarTitleColor:[[UIColor blackColor] colorWithAlphaComponent:alpha]];
-        [self ad_setStatusBarStyle:UIStatusBarStyleDefault];
         [self ad_setNavBarBarTintColor:[UIColor redColor]];
-        self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+        [self ad_setStatusBarStyle:UIStatusBarStyleDefault];
+//        self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
         self.title = @"我的";
     } else {
         [self ad_setNavBarBackgroundAlpha:0];
         [self ad_setNavBarTintColor:[UIColor whiteColor]];
         [self ad_setNavBarTitleColor:[UIColor whiteColor]];
         [self ad_setStatusBarStyle:UIStatusBarStyleLightContent];
-        self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+//        self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
         self.title = @"";
     }
 }

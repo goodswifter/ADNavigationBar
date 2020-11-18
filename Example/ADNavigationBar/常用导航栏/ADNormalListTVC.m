@@ -34,6 +34,15 @@
     self.datas = @[@"新浪微博个人中心", @"类似qq应用空间效果", @"类似QQ空间效果", @"知乎日报", @"QQ我的资料页", @"蚂蚁森林", @"连续多个界面隐藏导航栏", @"拉钩App首页", @"WRNavigationBar 对其不产生任何印象", @"测试 IQKeyBoardManager 对其影响"];
     
     self.vcs = @[ADWeiboTVC.class, ADQQTVC.class, ADQQZoneTVC.class, ADZhihuTVC.class, ADQQMineTVC.class, ADAntForestTVC.class, ADMultiHideNavTVC.class, ADLaGouTVC.class, ADSpecialVC.class, ADTestIQKeyVC.class];
+    
+//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self ad_setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 #pragma mark - <UITableViewDelegate>

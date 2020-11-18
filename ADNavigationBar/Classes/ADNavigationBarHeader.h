@@ -11,5 +11,6 @@
 
 #import "ADNavigationBar+ADDefault.h"
 #import "UIViewController+ADExtension.h"
+#import "ADNavigationController.h"
 
 #endif /* ADNavigationBarHeader_h */
